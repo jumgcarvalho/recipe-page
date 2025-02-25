@@ -1,0 +1,151 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'outfit';
+    src: url('assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'young-serif';
+    src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --cor-principal: hsl(30, 10%, 34%);
+    --cor-secundaria: hsl(14, 45%, 36%);
+}
+
+body {
+    display: flex;
+    background-color: hsl(30, 54%, 90%);
+    justify-content: center;
+}
+
+main {
+    background-color: hsl(0, 0%, 100%);
+    max-width: 800px;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 100px;
+    font-family: 'outfit';
+    color: var(--cor-principal);
+}
+
+main img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+h1 {
+    font-family: 'young-serif', Arial, Helvetica, sans-serif;
+    color: hsl(24, 5%, 18%);
+    font-weight: normal;
+    padding: 20px 0px;
+    font-size: 45px;
+}
+
+h2 {
+    font-family: 'young-serif';
+    color: var(--cor-secundaria);
+    font-weight: normal;
+    padding-top: 30px;
+    font-size: 30px;
+}
+
+p {
+    padding-bottom: 20px;
+}
+
+.preparation-time {
+    background-color: hsl(330, 100%, 98%);
+    padding: 25px;
+    border-radius: 15px;
+}
+
+h3 {
+    color: hsl(332, 51%, 32%);
+    padding-bottom: 5px;
+}
+
+ul {
+    margin-left: 20px;
+    text-indent: 15px;
+}
+
+ul li {
+    margin-top: 10px;
+}
+
+.preparation-time ul li::marker {
+    color: hsl(332, 51%, 32%);
+    font-size: 0.8em;
+}
+
+span {
+    font-weight: 700;
+}
+
+.ingredients ul li::marker {
+    font-size: 0.8em;
+}
+
+ol {
+    margin-left: 25px;
+}
+
+ol li {
+    margin-top: 10px;
+    padding-left: 15px;
+    line-height: 1.5;
+}
+
+.instructions ol li::marker {
+    font-family: 'outfit';
+    color: var(--cor-secundaria);
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.instructions h2 {
+    padding-top: 0px;
+}
+
+hr {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    opacity: 0.3;
+}
+
+.nutrition h2 {
+    padding-top: 0px;
+    padding-bottom: 15px;
+}
+
+.table hr {
+    margin-top: 5px;
+}
+
+.rows {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 35px;
+    padding-right: 100px;
+    margin-top: 10px;
+}
+
+.rows p {
+    flex: 1;
+}
+
+.rows .value{
+    color: var(--cor-secundaria);
+    font-weight: 700;
+}
